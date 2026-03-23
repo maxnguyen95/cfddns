@@ -1,0 +1,7 @@
+services:
+  cfddns:
+    image: maxnguyen95/cfddns:latest
+    container_name: cfddns
+    restart: unless-stopped
+    env_file:
+      - .env
